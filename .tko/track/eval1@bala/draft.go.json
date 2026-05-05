@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_17-18-58",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar x1, y1, x2, y2 float64\n\t\n\t// Read the coordinates\n\tfmt.Scan(&x1, &y1, &x2, &y2)\n\t\n\t// Calculate distance: d = sqrt((x2-x1)^2 + (y2-y1)^2)\n\tdx := x2 - x1\n\tdy := y2 - y1\n\tdistance := math.Sqrt(dx*dx + dy*dy)\n\t\n\t// Print with 2 decimal places\n\tfmt.Printf(\"%.2f\\n\", distance)\n}\n",
+            "lines": "21"
+        }
+    ]
+}

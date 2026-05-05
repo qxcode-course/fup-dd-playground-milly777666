@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_18-06-19",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var a, b int\n    _, err := fmt.Scanln(&a)\n    if err != nil {\n        return\n    }\n    _, err = fmt.Scanln(&b)\n    if err != nil {\n        return\n    }\n    avg := float64(a+b) / 2.0\n    fmt.Printf(\"%.1f\\n\", avg)\n}\n",
+            "lines": "17"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_17-24-45",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -41,216 +41,28 @@\n     \n-var n, d int%0A    if _, err := fmt.Scanln(&n); err != nil %7B%0A        return%0A    %7D%0A    if _, err := fmt.Scanln(&d); err != nil %7B%0A        return%0A    %7D%0A%0A    q := n / d%0A    r := n %25 d%0A    fmt.Printf(%22%25d %25d%5Cn%22, q, r\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_18-08-34",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var n, d int\n    if _, err := fmt.Scanln(&n); err != nil {\n        return\n    }\n    if _, err := fmt.Scanln(&d); err != nil {\n        return\n    }\n\n    q := n / d\n    r := n % d\n    fmt.Printf(\"%d %d\\n\", q, r)\n}\n",
+            "lines": "17"
+        }
+    ]
+}

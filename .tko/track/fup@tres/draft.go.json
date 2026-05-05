@@ -27,7 +27,12 @@
         },
         {
             "label": "2026-03-17_17-29-22",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var a, b, c int\n    if _, err := fmt.Scan(&a, &b, &c); err != nil {\n        fmt.Println(err)\n        return\n    }\n    fmt.Println(a + b + c)\n}",
+            "content": "@@ -181,9 +181,8 @@\n b + c)%0A%7D\n-%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-28_16-42-16",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var a, b, c int\n    if _, err := fmt.Scan(&a, &b, &c); err != nil {\n        fmt.Println(err)\n        return\n    }\n    fmt.Println(a + b + c)\n}\n",
             "lines": "12"
         }
     ]
